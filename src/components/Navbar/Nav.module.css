@@ -1,0 +1,105 @@
+.navicon {
+    background: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; /* Initially hide the bar icon */
+  }
+.nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+.navb{
+    font-family: 'Poppins';
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    height: 90px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding: 0% 4%;
+    position: fixed;
+    /* background-color: #cbcaca; */
+}
+.navb h1{
+    font-family:'Poppins';
+    font-size: 180%;
+    font-weight: 600;
+}
+.navb1{
+    margin-top: 0%;
+    display: flex;
+    flex-direction: row;
+    gap: 8%;
+    align-items: center;
+    justify-content: center;
+}
+.navic{
+    color: black;
+    font-size: 21px;
+}
+.lk{
+    font-size: 100%;
+    text-decoration: none;
+    color: black;
+    
+}
+.lk1{
+    padding: 2% 5%;
+    font-size: 100%;
+    font-weight: 500;
+    width: 130px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    transition: 600ms;
+}
+.lk1:hover{
+    background-color: #FAF9F5;
+    color: black;
+    transform: translateX(-6px);
+    box-shadow:7px 5px;
+    border: 2px solid rgb(63, 62, 62);
+}
+
+
+@media (max-width: 750px) {
+    .navicon {
+      display: block;
+    }
+} 
+
+@media screen and (max-width:756px) and (min-width: 250px){
+    .navb1{
+        display: flex;
+        flex-direction: column;
+        background-color: #cbcaca;
+        width: 100%;
+        z-index: 999;
+        margin-top: 5%;
+        align-items: center;
+        padding-bottom: 20px;
+        border-radius: 20px;
+        padding:3% 10%;
+        font-weight: 600;
+    }
+    .lk{
+        padding-top: 10px;
+        justify-content: start;
+    }
+    .navb{
+        width: 80%;
+    }
+    .nav{
+        padding: 0% 3%;
+    }
+}
